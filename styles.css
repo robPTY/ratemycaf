@@ -1,0 +1,23 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --font: sans-serif;
+    --font-size: 32px;
+}
+
+#navbar{
+    background-color: gray;
+    padding: 5px;
+    width: 100%;
+    margin-left: -8px;
+    font-size: var(--font-size);
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    #navbar{
+        font-size: 12px;
+    }
+}
