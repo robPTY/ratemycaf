@@ -1,6 +1,7 @@
 :root {
     --blue: #1e90ff;
     --white: #ffffff;
+    --purple: #8C52FF;
     --font: sans-serif;
     --font-size: 32px;
 }
@@ -11,6 +12,14 @@
     width: 100%;
     margin-left: -8px;
     font-size: var(--font-size);
+}
+
+#title{
+    font: Verdana;
+}
+
+strong{
+    color: var(--purple);
 }
 
 @media screen 
