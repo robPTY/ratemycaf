@@ -22,6 +22,10 @@ strong{
     color: var(--purple);
 }
 
+.banner{
+    display: inline-block;
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
