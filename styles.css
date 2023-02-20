@@ -27,6 +27,16 @@ strong{
     display: inline-block;
 }
 
+#search-section{
+    flex-direction: column;
+    background-color: red;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
