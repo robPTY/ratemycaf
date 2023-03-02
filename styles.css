@@ -62,7 +62,7 @@ strong{
     background-image: url(./images/caf2.jpg);
     background-size: cover;
     opacity: 0.8;
-    height: 75vh;
+    height: 90vh;
     display: flex;
     margin-left: -8px;
     margin-right: -8px;
@@ -109,5 +109,8 @@ strong{
   and (-webkit-min-device-pixel-ratio: 1) { 
     #navbar{
         font-size: 12px;
+    }
+    #search-section{
+        height: 84vh;
     }
 }
