@@ -35,11 +35,35 @@
 }
 
 #SignButton{
+    font-family: 'Nunito', sans-serif;
     margin-right: 10px;
+    border: 1px solid #8C52FF;
+    color: #8C52FF;
+    background-color: #ffffff;
+    padding: 4px;
+    transition: all .5s ease;
+    border-radius: 4px; 
+}
+
+#SignButton:hover{
+    color: #ffffff;
+    background-color: #8C52FF;
 }
 
 #LogInButton{
+    font-family: 'Nunito', sans-serif;
     margin-right: -3px;
+    border: 1px solid #8C52FF;
+    color: #8C52FF;
+    background-color: #ffffff;
+    padding: 4px;
+    transition: all .5s ease;
+    border-radius: 4px; 
+}
+
+#LogInButton:hover{
+    color: #ffffff;
+    background-color: #8C52FF;
 }
 
 #title{
