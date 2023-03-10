@@ -20,7 +20,7 @@
 }
 
 #navbar{
-    background-color: white;
+    background-color: var(--white);
     width: 100%;
     padding-top: -20px;
     padding-bottom: -10px;
@@ -34,36 +34,20 @@
     text-align: right;
 }
 
-#SignButton{
-    font-family: 'Nunito', sans-serif;
+.topButtons{
+    font-family: 'Raleway',sans-serif;
     margin-right: 10px;
-    border: 1px solid #8C52FF;
-    color: #8C52FF;
-    background-color: #ffffff;
+    border: 1px solid var(--purple);
+    color: var(--white);
+    background-color: var(--purple);
     padding: 4px;
     transition: all .5s ease;
     border-radius: 4px; 
 }
 
-#SignButton:hover{
-    color: #ffffff;
-    background-color: #8C52FF;
-}
-
-#LogInButton{
-    font-family: 'Nunito', sans-serif;
-    margin-right: -3px;
-    border: 1px solid #8C52FF;
-    color: #8C52FF;
-    background-color: #ffffff;
-    padding: 4px;
-    transition: all .5s ease;
-    border-radius: 4px; 
-}
-
-#LogInButton:hover{
-    color: #ffffff;
-    background-color: #8C52FF;
+.topButtons:hover{
+    color: var(--purple);
+    background-color: var(--white);
 }
 
 #title{
@@ -74,6 +58,14 @@
 }
 
 strong{
+    color: var(--purple);
+}
+
+strong.button{
+    color: var(--white);
+}
+
+strong.button:hover{
     color: var(--purple);
 }
 
@@ -125,6 +117,10 @@ strong{
     font-size: 12px;
     transform: scale(0.7); /* Add this line to scale down the size */
     transform-origin: middle;
+}
+
+#information-section{
+    height: 100vh;
 }
 
 @media screen 
