@@ -75,7 +75,7 @@ strong.button:hover{
 
 #search-section{
     flex-direction: column;
-    background-image: url(./images/caf2.jpg);
+    background-image: url(../images/caf2.jpg);
     background-size: cover;
     opacity: 0.8;
     height: 90vh;
