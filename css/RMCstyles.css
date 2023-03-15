@@ -75,7 +75,7 @@ strong.button:hover{
 
 #search-section{
     flex-direction: column;
-    background-image: url(./images/caf2.jpg);
+    background-image: url(../images/caf2.jpg);
     background-size: cover;
     opacity: 0.8;
     height: 90vh;
@@ -134,3 +134,22 @@ strong.button:hover{
         height: 84vh;
     }
 }
+
+#autosuggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1;
+  }
+  
+  #autosuggestions div {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  #autosuggestions div:hover {
+    background-color: lightgray;
+  }
+  
