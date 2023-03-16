@@ -22,7 +22,11 @@
         include("db_connection.php");
     ?>
 </head>
-
+<!-------TODO---
+1) FIX BUTTON IN SEARCH BAR
+2) ADD DATA FOR MOST REVIEWED
+3) FIX FOOTER/LOGINPAGE
+-------->
 <body>
     <div id="search-section"> 
         <p>Finding a place to eat just got a lot simpler.</p>

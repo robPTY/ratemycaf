@@ -182,10 +182,18 @@ strong.button:hover{
     align-items: center;
 }
 
-#logo{
-    height: 50%;
+.footer-el{
+    margin: 10px 0;
 }
 
+#logo{
+    height: 10%;
+}
+
+.services a{
+    display: inline-block;
+    margin-right: 10px;
+}
 /*MEDIA QUERIES*/
 @media screen 
   and (min-device-width: 1200px) 
