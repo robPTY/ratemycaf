@@ -112,11 +112,11 @@ strong.button:hover{
     border: 0px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     width: 380px;
-    text-indent: 10px;
     line-height: 15px;
-    font-size: 12px;
-    transform: scale(0.7); /* Add this line to scale down the size */
+    font-size: 15px;
+    transform: scale(1); /* Add this line to scale down the size */
     transform-origin: middle;
+    text-align:center;
 }
 
 #information-section{
@@ -134,22 +134,3 @@ strong.button:hover{
         height: 84vh;
     }
 }
-
-#autosuggestions {
-    position: absolute;
-    background-color: white;
-    border: 1px solid gray;
-    max-height: 200px;
-    overflow-y: auto;
-    z-index: 1;
-  }
-  
-  #autosuggestions div {
-    padding: 5px;
-    cursor: pointer;
-  }
-  
-  #autosuggestions div:hover {
-    background-color: lightgray;
-  }
-  
