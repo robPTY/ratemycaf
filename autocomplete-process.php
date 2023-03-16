@@ -1,4 +1,6 @@
 <?php
+    //just so Rob can access remotely
+    header('Access-Control-Allow-Origin: *');
     include("db_connection.php");
     $query = $_GET['term'];
     // Fetch the suggestions from table
