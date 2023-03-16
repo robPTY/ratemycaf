@@ -169,9 +169,63 @@ strong.button:hover{
 }
 
 /*REVIEWS SECTION*/
+
+#rs-title{
+    text-align:center;
+}
 #review-section{
     height: 100vh;
-    background-color: blue;
+}
+
+#review-section p{
+    margin-bottom: -10px;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.header-img{
+    height: 100%;
+}
+
+.img-part{
+    height:70%;
+    background-color: gray;
+}
+
+.bottom-text{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.caf-cont{
+    float:left;
+}
+
+.location{
+    float:right;
+}
+
+.text-part{
+    overflow: hidden;
+    text-align: left;
+    font: 16px;
+}
+
+.child{
+    text-align: center;
+    height: 200px;
+    border-radius: 3%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid #80ffe5;
+    float: left;
+    text-overflow: ellipsis;
 }
 
 /* FOOTER */

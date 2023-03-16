@@ -26,6 +26,7 @@
 1) FIX BUTTON IN SEARCH BAR
 2) ADD DATA FOR MOST REVIEWED
 3) FIX FOOTER/LOGINPAGE
+4) REPLACE REVIEW SECTION WITH PHP
 -------->
 <body>
     <div id="search-section"> 
@@ -64,6 +65,54 @@
         </div>
     </div>
     <div id="review-section">
+        <h1 id="rs-title" >Most Searched Schools</h1>
+        <div class="parent">
+            <div class="child">
+                <div class="img-part">
+                    <img class="header-img" src="./images/JBU.webp"/>
+                </div>
+                <div class="text-part">
+                    <p>John Brown University</p>
+                    <div class="bottom-text">
+                        <p class="caf-count">1 Caf.</p>
+                        <p class="location">Siloam Springs, AR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+            <div class="child">
+                <p>hi</p>
+            </div>
+        </div>
     </div>
     <?php
         include("footer.php");
