@@ -19,6 +19,7 @@
     src: url(./fonts/tiltwarp.ttf);
 }
 
+/* NAVBAR + SEARCH SECTION */
 #navbar{
     background-color: var(--white);
     width: 100%;
@@ -78,7 +79,7 @@ strong.button:hover{
     background-image: url(../images/caf2.jpg);
     background-size: cover;
     opacity: 0.8;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     margin-left: -8px;
     margin-right: -8px;
@@ -119,10 +120,135 @@ strong.button:hover{
     text-align:center;
 }
 
+#search-button{
+    z-index: 2;
+}
+
+#search-button:hover{
+    cursor: pointer;
+}
+
+/* INFORMATION SECTION */
 #information-section{
+    height: 100vh;
+    display: inline-block;
+    justify-content: center;
+}
+
+.layer1{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 180px;
+    vertical-align: middle;
+    margin-bottom: 40px;
+}
+  
+.side-text, .side-img{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.side-text{
+    text-align:center;
+    width: 60%;
+    margin-left: 40px;
+}
+
+.side-img{
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-img{
+    width: 70%;
+    margin-left: 40px;
+}
+
+/*REVIEWS SECTION*/
+
+#rs-title{
+    text-align:center;
+}
+#review-section{
     height: 100vh;
 }
 
+#review-section p{
+    margin-bottom: -10px;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.header-img{
+    height: 100%;
+}
+
+.img-part{
+    height:70%;
+    background-color: gray;
+}
+
+.bottom-text{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.caf-cont{
+    float:left;
+}
+
+.location{
+    float:right;
+}
+
+.text-part{
+    overflow: hidden;
+    text-align: left;
+    font: 16px;
+}
+
+.child{
+    text-align: center;
+    height: 200px;
+    border-radius: 3%;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 2px solid #80ffe5;
+    float: left;
+    text-overflow: ellipsis;
+}
+
+/* FOOTER */
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-el{
+    margin: 10px 0;
+}
+
+#logo{
+    height: 10%;
+}
+
+.services a{
+    display: inline-block;
+    margin-right: 10px;
+}
+/*MEDIA QUERIES*/
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
