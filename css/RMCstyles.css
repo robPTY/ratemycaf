@@ -248,6 +248,27 @@ strong.button:hover{
     display: inline-block;
     margin-right: 10px;
 }
+
+table {
+    border-collapse: separate;
+    border-spacing: 30px;
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.uni-img {
+    max-width: 250px;
+    height: auto;
+}
+
 /*MEDIA QUERIES*/
 @media screen 
   and (min-device-width: 1200px) 

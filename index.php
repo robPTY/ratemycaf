@@ -66,53 +66,29 @@
     </div>
     <div id="review-section">
         <h1 id="rs-title" >Most Searched Schools</h1>
-        <div class="parent">
-            <div class="child">
-                <div class="img-part">
-                    <img class="header-img" src="./images/JBU.webp"/>
-                </div>
-                <div class="text-part">
-                    <p>John Brown University</p>
-                    <div class="bottom-text">
-                        <p class="caf-count">1 Caf.</p>
-                        <p class="location">Siloam Springs, AR</p>
-                    </div>
-                </div>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-            <div class="child">
-                <p>hi</p>
-            </div>
-        </div>
+        <?php
+            $sql2="SELECT * FROM `universities_tab`"; //Selects all books from books table
+            $result2=$conn->query($sql2);
+			$count=0;
+			echo "<table><tr>";
+            while($row2 = $result2->fetch_assoc())
+            {
+				echo "<td>";
+                echo $row2['uni_name']."<br>";
+                echo "<img class='uni-img' src='./images/".$row2['uni_img']."'/>";
+				echo "<br>";
+                echo $row2['uni_location']."<br>";
+				echo "</td>";
+				$count++;
+				if($count % 4 == 0){
+					echo "</tr><tr>";
+				}
+                if($count == 8){
+                    break;
+                }
+            }
+			echo "</tr></table>";
+        ?>
     </div>
     <?php
         include("footer.php");
