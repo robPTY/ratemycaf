@@ -303,6 +303,10 @@ td {
     margin-left: 25px;
 }
 
+.highlights{
+    color: #8C52FF;
+}
+
 /*MEDIA QUERIES*/
 @media screen 
   and (min-device-width: 1200px) 

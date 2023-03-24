@@ -11,7 +11,7 @@
             <img id="about-img" src="./images/caf-people2.jpg">
         </div>
         <div id="about-text">
-            <h4 class="inside-text-abt" >About</h4>
+            <h4 class="inside-text-abt" ><span class="highlights">About</span></h4>
             <h2 class="inside-text-abt">RateMyCaf</h2>
             <p class="inside-text-abt">
             We know that cafeterias are some of the most important elements of a school for college students. 
@@ -26,10 +26,10 @@
             Join our community today and contribute to the conversation about college cafeterias and more.
             </p>
             <p class="inside-text-abt">
-            Questions? Check our help page or send us an email at contact@ratemycaf.com.
+            Questions? Check our <span class="highlights">help page</span> or send us an email at <span class="highlights">contact@ratemycaf.com</span>.
             </p>
             <p class="inside-text-abt">
-                Founded and developed by Roberto Aguero and Grayson Crawford.
+                Founded and developed by <span class="highlights" href="www.github/robPTY">Roberto Aguero</span> and <span class="highlights">Grayson Crawford</span>.
             </p>
         </div>
     </div>

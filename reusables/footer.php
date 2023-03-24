@@ -8,7 +8,7 @@
     </div>
     <div class="services, footer-el">
         <a href="about.php">About</a>
-        <a>Contact</a>
+        <a href="contact.php">Contact</a>
         <a>Help</a>
         <a>List of Schools</a>
     </div>
