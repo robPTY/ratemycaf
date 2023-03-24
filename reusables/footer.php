@@ -7,7 +7,7 @@
         <a>Twitter</a>
     </div>
     <div class="services, footer-el">
-        <a>About</a>
+        <a href="about.php">About</a>
         <a>Contact</a>
         <a>Help</a>
         <a>List of Schools</a>

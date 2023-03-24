@@ -18,8 +18,8 @@
     <script src="js/RMCcode.js"></script>
     <title>RateMyCaf | University Cafeteria Reviews</title>
     <?php 
-        include("top-menu.php");
-        include("db_connection.php");
+        include("./reusables/top-menu.php");
+        include("./reusables/db_connection.php");
     ?>
 </head>
 <!-------TODO---
@@ -33,7 +33,6 @@
         <p>Finding a place to eat just got a lot simpler.</p>
         <form name="search-bar-form" method="POST" action="">
             <input id="search-bar" placeholder="Search for your university" type="text"/>
-            <input id="search-button" value="✈️" type="button"/>
         </form>
     </div>
     <div id="information-section"> 
@@ -91,7 +90,7 @@
         ?>
     </div>
     <?php
-        include("footer.php");
+        include("./reusables/footer.php");
     ?>
 </body>
 </html>
