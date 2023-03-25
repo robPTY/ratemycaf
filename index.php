@@ -64,7 +64,6 @@
         </div>
     </div>
     <div id="review-section">
-        <h1 id="rs-title" >Most Searched Schools</h1>
         <?php
             $sql2="SELECT * FROM `universities_tab`"; //Selects all books from books table
             $result2=$conn->query($sql2);
@@ -73,9 +72,9 @@
             while($row2 = $result2->fetch_assoc())
             {
 				echo "<td>";
-                echo $row2['uni_name']."<br>";
                 echo "<img class='uni-img' src='./images/".$row2['uni_img']."'/>";
 				echo "<br>";
+                echo $row2['uni_name']."<br>";
                 echo $row2['uni_location']."<br>";
 				echo "</td>";
 				$count++;
