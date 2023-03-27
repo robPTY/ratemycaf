@@ -20,6 +20,11 @@
 }
 
 /* NAVBAR + SEARCH SECTION */
+#menu-anchor{
+    text-decoration: none;
+    color: black;
+}
+
 #navbar{
     background-color: var(--white);
     width: 100%;
