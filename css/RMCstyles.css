@@ -50,6 +50,7 @@
     transition: all .5s ease;
     border-radius: 4px; 
     font-size: 24px;
+    cursor: pointer;
 }
 
 .topButtons:hover{
