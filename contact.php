@@ -1,40 +1,85 @@
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
-<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel='stylesheet' href='css/CONstyles.css'>
+    <link rel="stylesheet" href="css/RMCstyles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
 </head>
 <?php
     include("./reusables/db_connection.php");
     include("./reusables/top-menu.php");
 ?>
+<body>
+<section id="contact">
+  
+  <h1 class="section-header">Contact</h1>
+  
+  <div class="contact-wrapper">
+  
+  <!-- Left contact page --> 
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- Left contact page --> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">hitmeup@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+<body>
 <?php
-    $sql2="SELECT * FROM `universities_tab`"; //Selects all books from books table
-    $result2=$conn->query($sql2);
-    $count=0;
-    echo "<table><tr>";
-    while($row2 = $result2->fetch_assoc())
-    {
-        echo "<td>";
-        echo "<div class='uni-cards'>";
-        echo "<div class='uni-card-img'>";
-        echo "<img class='uni-img' src='./images/".$row2['uni_img']."'/>";
-        echo "</div>";
-        echo "<div class='uni-cards-text'>";
-        echo "<div class='uni-card-name'>";
-        echo $row2['uni_short_name']."<br>";
-        echo "</div>";
-        echo $row2['uni_location'];
-        echo "</div>";
-        echo "</div>";
-        echo "</td>";
-        $count++;
-        if($count % 4 == 0){
-            echo "</tr><tr>";
-        }
-        if($count == 8){
-            break;
-        }
-    }
-    echo "</tr></table>";
     include("./reusables/footer.php");
 ?>
 

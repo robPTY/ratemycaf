@@ -1,5 +1,5 @@
 body {
-    background-color: #8C52FF;
+    background-color: #fff;
 }
 
 #login-section{
@@ -10,7 +10,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 400px;
+    height: 430px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ form {
     box-shadow: 2px 3px 8px 8px #000000;
 } 
   
-h1 {
+.login-title{
     font: 50px Helvetica;
     margin-top: -5px;
     margin-bottom: 10px;
@@ -77,4 +77,18 @@ form p {
 form a {
     text-decoration: none;
 }
-  
+
+#holder{
+    margin: auto;
+    margin-top: 90px;
+}
+
+.register-title{
+    color: black;
+    margin-top: 10px;
+}
+
+#reg-but{
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
