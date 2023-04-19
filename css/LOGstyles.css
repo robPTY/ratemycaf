@@ -1,5 +1,5 @@
 body {
-    background-color: #fff;
+    background-color: #8C52FF;
 }
 
 #login-section{
@@ -10,7 +10,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 360px;
-    height: 430px;
+    height: 480px;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -84,11 +84,22 @@ form a {
 }
 
 .register-title{
-    color: black;
-    margin-top: 10px;
+    font: 50px Helvetica;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color:#8C52FF;
 }
 
 #reg-but{
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 250px;
+    padding: 12px;
+    border: 0px;
+    background: #8C52FF;
+    border-radius: 8px;
+    color: white;
+    font: 18px Georgia;
+    font-weight: bold;
+    border: 2px solid #8C52FF;
 }

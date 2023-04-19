@@ -1,7 +1,7 @@
 <?php
     //just so Rob can access remotely
     header('Access-Control-Allow-Origin: *');
-    include("db_connection.php");
+    include("reusables/db_connection.php");
     $query = $_GET['term'];
     // Fetch the suggestions from table
     $sql = "SELECT uni_name FROM universities_tab WHERE uni_name LIKE '%".$query."%'";
