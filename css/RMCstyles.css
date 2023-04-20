@@ -96,7 +96,7 @@ strong.button:hover{
     position:relative;
     color: white;
     font-size: 20px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 #search-section::before{
@@ -309,11 +309,11 @@ td {
     width: 100%;
     margin-left: 25px;
 }
-
+/*
 #about-image-section{
     border: 2px solid red;
 }
-
+*/
 .inside-text-abt{
     margin-left: 25px;
 }
@@ -329,6 +329,11 @@ td {
     box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.3);
     border-radius: 0px 0px 8px 8px;
     height: 290px;
+}
+
+.uni-cards:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .uni-card-img{
