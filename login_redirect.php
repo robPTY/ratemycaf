@@ -6,6 +6,8 @@
   $email=($_POST['email']);
   $pwd=($_POST['password']);
 
+
+
   $sql = "SELECT * FROM Registration_tab WHERE email = '$email' AND password = '$pwd'";
   $result=$conn->query($sql);
   $row = $result->fetch_assoc(); 
