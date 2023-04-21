@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include("reusables/db_connection.php");
     $query = $_GET['term'];
     // Fetch the suggestions from table
@@ -16,16 +17,17 @@
     $password = $_POST['password'];
     $matches = preg_grep('/^' . preg_quote($university, '/') . '$/', $suggestions);
     if (!preg_match('/@.*\.edu$/', $email)) {
-        echo "Please enter a valid .edu email address.";
+        $_SESSION['emailerror'] = "<span style='color:red;'>Please enter a valid .edu email address.</span>";
     } 
     else if(empty($matches)) { 
-        echo "Please enter a valid university that we support.";
+        $_SESSION['unierror'] = "<span style='color:red;'>Please enter a valid university within our databases.</span>";
     }
     else {
         
         $sql1 = "INSERT INTO Registration_tab (email, name, university, password) VALUES ('$email', '$name', '$university', '$password');";
         if ($conn->query($sql1) === TRUE) {
-            header('Location: '.'index.php');
+            $_SESSION['registered'] = true;
+            header('Location: index.php');
         } 
     }      
 ?>

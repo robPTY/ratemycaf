@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <?php include("./reusables/db_connection.php")?>
 <?php
     // Step 1: Retrieve dynamic value from rewritten URL

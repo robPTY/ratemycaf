@@ -192,6 +192,7 @@ strong.button:hover{
 }
 #review-section{
     height: 100vh;
+    
 }
 
 #review-section p{
@@ -329,6 +330,7 @@ td {
     box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.3);
     border-radius: 0px 0px 8px 8px;
     height: 290px;
+    background-color:#cfb6ff;
 }
 
 .uni-cards:hover{

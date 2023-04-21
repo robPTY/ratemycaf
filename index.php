@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,6 +31,13 @@
 3) FIX FOOTER/LOGINPAGE
 4) REPLACE REVIEW SECTION WITH PHP
 -------->
+<?php if($_SESSION["registered"] === true){
+    unset($_SESSION["registered"]);
+     ?>
+    <script>
+        alert("Registration successful. You may now proceed to login.");
+    </script>
+<?php } ?>
 <body>
     <div id="search-section"> 
         <p>Finding a place to eat just got a lot simpler.</p>
@@ -66,6 +74,7 @@
         </div>
     </div>
     <div id="review-section">
+
     <?php
         $sql2="SELECT * FROM `universities_tab`"; 
         $result2=$conn->query($sql2);
@@ -101,4 +110,5 @@
         include("./reusables/footer.php");
     ?>
 </body>
+
 </html>

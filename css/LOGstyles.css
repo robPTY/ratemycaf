@@ -103,3 +103,10 @@ form a {
     font-weight: bold;
     border: 2px solid #8C52FF;
 }
+
+#reg-but:hover {
+    background-color: #fff;
+    color: #8C52FF;
+    border-color: #8C52FF;
+    cursor: pointer;
+}

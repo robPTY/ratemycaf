@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <head>
     <link rel='stylesheet' href='css/CONstyles.css'>
     <link rel="stylesheet" href="css/RMCstyles.css">

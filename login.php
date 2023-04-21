@@ -10,7 +10,7 @@
 
     <body>
         <div id="login-section">
-            <form method="POST" action="login_redirect.php">
+            <form method="POST" action="login_process.php">
                 <h1 class='login-title'> Log In </h1>
                 <input class="name" id="email" name="email" type="email" placeholder="E-Mail"/>
                 <input class="name" id="password" name="password" type="Password" placeholder="Password"/>
@@ -30,7 +30,6 @@
                   }
                 ?>
                 <input class="submit" type="submit" id="login-button" value="Log In"/>
-                <a href="#"><p>Forgot password?</p></a>
                 <a href="register.php"><p>Don't have an account? Sign Up</p></a>
             </form>
         </div>
