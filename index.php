@@ -67,7 +67,7 @@
     </div>
     <div id="review-section">
     <?php
-        $sql2="SELECT * FROM `universities_tab`"; //Selects all books from books table
+        $sql2="SELECT * FROM `universities_tab`"; 
         $result2=$conn->query($sql2);
         $count=0;
         echo "<table><tr>";
