@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/RMCstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=TiltWarp">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
 </head>
 <body>
     <?php
@@ -54,17 +54,56 @@
             echo "</div>";
         }
     ?>
-    <?php
-        $sql2 = "SELECT * FROM universities_tab WHERE id = ?";
-        $stmt2 = $conn->prepare($sql2);
-        $stmt2->bind_param("i", $id);
-        $id = $_GET['id'];
-        $stmt2->execute();
-        $result2 = $stmt2->get_result();
-        while ($row2 = $result2->fetch_assoc()) {
-            echo $row2['uni_name'] . "<br>";
-        }        
-    ?>
+    <div class='main-holder'>
+        <div class='comment-section'>
+            <div class='review'>
+                <div class='icon'>
+                    <!----<img id='caf-icon' src='../images/caf-people.jpg'> ---->
+                </div>
+                <div class='comment'>
+                    <?php
+                        $sql2="SELECT * FROM cafeterias_tab WHERE id = ?";
+                        $stmt2 = $conn->prepare($sql2);
+                        $stmt2->bind_param("i", $id);
+                        $id = $_GET['id'];
+                        $stmt2->execute();
+                        $result2 = $stmt2->get_result();
+                        while($row2 = $result2->fetch_assoc())
+                        {
+                            echo "<span class='cafeteria-title'>".$row2['cafeteria']."</span><br>";
+                            echo $row2['description']."<br>";
+                            echo "<span class='meal-title'>Student Rating: </span>";
+                            echo $row2['rating'];
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class='menu-section'>
+            <h1>Today's Menu</h1>
+            <?php
+                $sql2="SELECT * FROM menu_tab WHERE id = ?";
+                $stmt2 = $conn->prepare($sql2);
+                $stmt2->bind_param("i", $id);
+                $id = $_GET['id'];
+                $stmt2->execute();
+                $result2 = $stmt2->get_result();
+                while($row2 = $result2->fetch_assoc())
+                {
+                    echo "<div class='menu-content'>";
+                    echo "<span class='meal-title'>Breakfast: </span>";
+                    echo $row2['breakfast']."<br>";
+                    echo "<span class='meal-title'>Lunch: </span>";
+                    echo $row2['lunch']."<br>";
+                    echo "<span class='meal-title'>Dinner: </span>";
+                    echo $row2['dinner']."<br>";
+                    echo "<span class='meal-title'>Dessert: </span>";
+                    echo $row2['dessert']."<br>";
+                    echo "</div>";
+                }
+            ?>
+        </div>
+    </div>
 </body>
 </html>
 <?php

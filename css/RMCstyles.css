@@ -328,7 +328,7 @@ td {
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 6px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 0px 0px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
     height: 290px;
     background-color:#cfb6ff;
 }
@@ -385,6 +385,7 @@ td {
     display: flex;
     margin-left: 430px;
     left: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .container-for-ban{
@@ -395,7 +396,7 @@ td {
 }
 
 .container-for-ban::before{
-    margin-top: 180px;
+    margin-top: 182px;
     content: '';
     width: 100%;
     height: 20%;
@@ -409,4 +410,67 @@ td {
 
 #right-sided{
     text-align: right;
+}
+
+.main-holder{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.menu-section{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 30%;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 35px;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.comment-section{
+    border: 2px solid green;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.comment{
+    width: 85%;
+    border: 2px solid blue;
+    margin-left: 0px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.meal-title{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu-content{
+    font-size: 18px;
+}
+
+.cafeteria-title{
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.icon{
+    border: 2px solid red;
+    width: 15%;
+}
+
+.review{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    border-radius: 8px 8px 8px 8px;
+}
+
+#caf-icon{
+    height: 100%;
 }
