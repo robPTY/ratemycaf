@@ -1,5 +1,5 @@
 <nav id="navbar">
-    <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner">RateMy<strong>Caf</strong></p></a>
+    <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner"><span class='main-title'>RateMy<strong class='bold-part'>Caf</strong><span></p></a>
     <?php 
     if($_SESSION['logged_in']){
         echo "<form action='/ratemycaf/logout.php'>";
