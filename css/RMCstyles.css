@@ -492,7 +492,6 @@ td {
     color: black;
 }
 
-<<<<<<< HEAD
 .main-title{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
@@ -509,7 +508,8 @@ td {
 .footer-el-p:hover{
     cursor: pointer;
     color: var(--purple);
-=======
+}
+
 .addcommentsection{
     border: 2px solid black;
     background-color: var(--white);
@@ -583,5 +583,4 @@ div.stars {
     color: #8C52FF;
     border-color: #8C52FF;
     cursor: pointer;
->>>>>>> bb67939 (added a comment section)
 }

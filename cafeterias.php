@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="../css/RMCstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=TiltWarp">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-<<<<<<< HEAD
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>RateMyCaf | 
         <?php 
@@ -49,10 +48,8 @@
             }
         ?>
     </title>
-=======
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
->>>>>>> bb67939 (added a comment section)
 </head>
 <body>
     <?php
