@@ -1,4 +1,9 @@
-<?php session_start() ?>
+<?php session_start();
+if ($_SESSION['logged_in'] == true){
+    header('Location: /ratemycaf/');
+}
+else{
+?>
 
 <!DOCTYPE html>
 <html>
@@ -8,7 +13,7 @@
         <link rel="stylesheet" href="./css/LOGstyles.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
         <nav id="navbar">
-            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner">RateMy<strong>Caf</strong></p></a>
+            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner"><span class='main-title'>RateMy<strong class='bold-part'>Caf</strong><span></p></a>
         </nav>
     </head>
     <script src="js/RMCcode.js"></script>
@@ -42,3 +47,4 @@
         <?php include("./reusables/footer.php"); ?>
     </body>
 </html>
+<?php } ?>

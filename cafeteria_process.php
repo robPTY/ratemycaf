@@ -8,5 +8,5 @@
   $result=$conn->query($sql);
   $row = $result->fetch_assoc(); 
 
-  header("Location: ./cafeterias.php/".$row['id']);
+  header("Location: /ratemycaf/cafeterias/".$row['id']);
  ?>

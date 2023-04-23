@@ -1,29 +1,6 @@
 <?php session_start(); ?>
 <?php include("./reusables/db_connection.php")?>
-<?php
-    // Step 1: Retrieve dynamic value from rewritten URL
-    $request_uri = $_SERVER['REQUEST_URI'];
-    $components = explode('/', $request_uri);
-    $id = $components[count($components)-1];
-
-    // Step 2: Validate dynamic value
-    if (!is_numeric($id)) {
-        die("Invalid product ID");
-    }
-
-    // Prepare query
-    $stmt = $conn->prepare('SELECT * FROM universities_tab WHERE id = ?');
-    $stmt->bind_param('i', $id);
-
-    // Execute query
-    $stmt->execute();
-
-    // Retrieve product information
-    $result = $stmt->get_result();
-    $product = $result->fetch_assoc();
-
-    // Display product information on page
-?>
+<?php include("./reusables/id_connection.php")?>
 <!DOCTYPE html>
 <?php
     include("./reusables/top-menu.php");
@@ -40,12 +17,11 @@
             $stmt2 = $conn->prepare($sql2);
             $stmt2->bind_param("i", $id);
             $id = $_GET['id'];
+            $_SESSION['id'] = $id;
             $stmt2->execute();
             $result2 = $stmt2->get_result();
-            while($row2 = $result2->fetch_assoc())
-            {
-                echo $row2['uni_name'];
-            }
+            $row2 = $result2->fetch_assoc();
+            echo $row2['uni_name'];
         ?>
     </title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -72,42 +48,63 @@
     <div class='main-holder'>
         <div class='comment-section'>
             <div class='addcommentsection'>
+            <form method="POST" action="/ratemycaf/commentrating_process.php">
                 <input type="text" id="cafname" name="cafname" placeholder="Cafeteria Name..." value="">
                     <div class="stars">
-                        <form action="">
-                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
                             <label class="star star-5" for="star-5"></label>
-                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <input class="star star-4" id="star-4" type="radio" name="star" value="4"/>
                             <label class="star star-4" for="star-4"></label>
-                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <input class="star star-3" id="star-3" type="radio" name="star" value="3"/>
                             <label class="star star-3" for="star-3"></label>
-                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <input class="star star-2" id="star-2" type="radio" name="star" value="2"/>
                             <label class="star star-2" for="star-2"></label>
-                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <input class="star star-1" id="star-1" type="radio" name="star" value="1"/>
                             <label class="star star-1" for="star-1"></label>
-                        </form>
                     </div>
+                    <?php
+                        if (isset($_SESSION['privelageerror']))
+                        {
+                            echo $_SESSION['privelageerror'];
+                            unset($_SESSION['privelageerror']);
+                        }
+                    ?>
                     <input class="comment-button" id="submit" type="submit" value="Submit Comment">
-                <br><textarea type="text" id="addcomment" placeholder="Add comment..." value=""></textarea>
+                <br><textarea type="text" name="addcomment" id="addcomment" placeholder="Add comment..." value=""></textarea>
+                </form>
             </div>
             <?php
-                $sql2="SELECT * FROM cafeterias_tab WHERE id = ?";
+                $sql2="SELECT * FROM cafreviews_tab WHERE id = ?";
                 $stmt2 = $conn->prepare($sql2);
                 $stmt2->bind_param("i", $id);
                 $id = $_GET['id'];
                 $stmt2->execute();
                 $result2 = $stmt2->get_result();
-                while($row2 = $result2->fetch_assoc())
+                while($row1 = $result2->fetch_assoc())
                 {
                     echo "<div class='review'>";
                     echo "<div class='icon'>";
-                    echo "<img class='icon-img' src='../images/".$row2['icon']."'>";
+                    echo "<img class='icon-img' src='../images/".$row1['icon']."'>";
                     echo "</div>";
                     echo "<div class='comment'>";
-                    echo "<span class='cafeteria-title'>".$row2['cafeteria']."</span><br>";
-                    echo $row2['description']."<br>";
+                    echo "<span class='cafeteria-title'>".$row1['cafeteria']."</span><br>";
+                    echo $row1['description']."<br>";
                     echo "<span class='meal-title'>Student Rating: </span>";
-                    echo $row2['rating'];
+                    if ($row1['rating'] == 5) {
+                        echo "<i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><br>";
+                    } elseif ($row1['rating'] == 4) {
+                        echo "<i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><br>";
+                    } elseif ($row1['rating'] == 3) {
+                        echo "<i class='fa fa-star'></i><i class='fa fa-star'></i><i class='fa fa-star'></i><br>";
+                    } elseif ($row1['rating'] == 2) {
+                        echo "<i class='fa fa-star'></i><i class='fa fa-star'></i><br>";
+                    } elseif ($row1['rating'] == 1) {
+                        echo "<i class='fa fa-star'></i><br>";
+                    } else {
+                        echo "No Rating<br>";
+                    }
+                    echo "<span class='meal-title'>Student Name: </span>";
+                    echo $row1['studname']."(".$row2['uni_short_name'].")<br>";
                     echo "</div>";
                     echo "</div>";
                 }
