@@ -103,8 +103,9 @@
             ?>
         </div>
     </div>
-</body>
-</html>
-<?php
+    <?php
         include("./reusables/footer.php");
 ?>
+</body>
+</html>
+

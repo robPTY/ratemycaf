@@ -41,8 +41,8 @@
 <body>
     <div id="search-section"> 
         <p>Finding a place to eat just got a lot simpler.</p>
-        <form name="search-bar-form" method="POST" action="">
-            <input id="search-bar" placeholder="Search for your university" type="text"/>
+        <form name="search-bar-form" method="POST" action="cafeteria_process.php">
+            <input name="search-bar" id="search-bar" placeholder="Search for your university" type="text"/>
         </form>
     </div>
     <div id="information-section"> 
@@ -83,6 +83,7 @@
         while($row2 = $result2->fetch_assoc())
         {
             echo "<td>";
+            echo "<a href='cafeterias.php/$row2[id]'>";
             echo "<div class='uni-cards'>";
             echo "<div class='uni-card-img'>";
             echo "<img class='uni-img' src='./images/".$row2['uni_img']."'/>";
@@ -94,6 +95,7 @@
             echo $row2['uni_location'];
             echo "</div>";
             echo "</div>";
+            echo "</a>";
             echo "</td>";
             $count++;
             if($count % 4 == 0){
