@@ -45,7 +45,7 @@
             <input name="search-bar" id="search-bar" placeholder="Search for your university" type="text"/>
         </form>
     </div>
-    <div id="information-section"> 
+    <div id="information-section" class='reveal'> 
         <div class="layer1" >
             <div class="side-text">
                 <p>Find your school</p>
@@ -73,8 +73,7 @@
         <div id="layer3">
         </div>
     </div>
-    <div id="review-section">
-
+    <div id="review-section" class='reveal'>
     <?php
         $sql2="SELECT * FROM `universities_tab`"; 
         $result2=$conn->query($sql2);
@@ -111,6 +110,21 @@
     <?php
         include("./reusables/footer.php");
     ?>
-</body>
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
 
+  function reveal(){
+    var reveals = document.querySelectorAll('.reveal');
+    for(var i=0; i < reveals.length; i++){
+      var windowheight = window.innerHeight;
+      var revealtop = reveals[i].getBoundingClientRect().top;
+      var revealpoint = 150;
+
+      if(revealtop < windowheight - revealpoint){
+        reveals[i].classList.add('active');
+      }
+    }
+  }
+</script>
+</body>
 </html>

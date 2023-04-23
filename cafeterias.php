@@ -33,7 +33,21 @@
     <link rel="stylesheet" href="../css/RMCstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=TiltWarp">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <title>RateMyCaf | 
+        <?php 
+            $sql2="SELECT * FROM universities_tab WHERE id = ?";
+            $stmt2 = $conn->prepare($sql2);
+            $stmt2->bind_param("i", $id);
+            $id = $_GET['id'];
+            $stmt2->execute();
+            $result2 = $stmt2->get_result();
+            while($row2 = $result2->fetch_assoc())
+            {
+                echo $row2['uni_name'];
+            }
+        ?>
+    </title>
 </head>
 <body>
     <?php

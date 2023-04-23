@@ -498,3 +498,12 @@ td {
 .bold-part{
     font-weight: bold;
 }
+
+.footer-el a{
+    text-decoration: none;
+}
+
+.footer-el-p:hover{
+    cursor: pointer;
+    color: var(--purple);
+}
