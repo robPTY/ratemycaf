@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="../css/RMCstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=TiltWarp">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway'>
+<<<<<<< HEAD
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
     <title>RateMyCaf | 
         <?php 
@@ -48,6 +49,10 @@
             }
         ?>
     </title>
+=======
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+>>>>>>> bb67939 (added a comment section)
 </head>
 <body>
     <?php
@@ -57,19 +62,37 @@
         $id = $_GET['id'];
         $stmt2->execute();
         $result2 = $stmt2->get_result();
-        while($row2 = $result2->fetch_assoc())
-        {
-            echo "<div class='container-for-ban'>";
-            echo "<img class='uni-banner-img' src='../images/".$row2['uni_banner_img']."'/>";
-            echo "<div class='text-container'>";
-            echo "<h1 id='left-sided'>".$row2['uni_name']." -</h1>";
-            echo "<h1 id='right-sided'>"."&nbsp;".$row2['uni_location']."</h1>";
-            echo "</div>";
-            echo "</div>";
-        }
+        $row2 = $result2->fetch_assoc();
+        echo "<div class='container-for-ban'>";
+        echo "<img class='uni-banner-img' src='../images/".$row2['uni_banner_img']."'/>";
+        echo "<div class='text-container'>";
+        echo "<h1 id='left-sided'>".$row2['uni_name']." -</h1>";
+        echo "<h1 id='right-sided'>"."&nbsp;".$row2['uni_location']."</h1>";
+        echo "</div>";
+        echo "</div>";
+        echo "<title> RateMyCaf | $row2[uni_name] </title>";
     ?>
     <div class='main-holder'>
         <div class='comment-section'>
+            <div class='addcommentsection'>
+                <input type="text" id="cafname" name="cafname" placeholder="Cafeteria Name..." value="">
+                    <div class="stars">
+                        <form action="">
+                            <input class="star star-5" id="star-5" type="radio" name="star"/>
+                            <label class="star star-5" for="star-5"></label>
+                            <input class="star star-4" id="star-4" type="radio" name="star"/>
+                            <label class="star star-4" for="star-4"></label>
+                            <input class="star star-3" id="star-3" type="radio" name="star"/>
+                            <label class="star star-3" for="star-3"></label>
+                            <input class="star star-2" id="star-2" type="radio" name="star"/>
+                            <label class="star star-2" for="star-2"></label>
+                            <input class="star star-1" id="star-1" type="radio" name="star"/>
+                            <label class="star star-1" for="star-1"></label>
+                        </form>
+                    </div>
+                    <input class="comment-button" id="submit" type="submit" value="Submit Comment">
+                <br><textarea type="text" id="addcomment" placeholder="Add comment..." value=""></textarea>
+            </div>
             <?php
                 $sql2="SELECT * FROM cafeterias_tab WHERE id = ?";
                 $stmt2 = $conn->prepare($sql2);
