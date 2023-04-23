@@ -83,7 +83,7 @@
         while($row2 = $result2->fetch_assoc())
         {
             echo "<td>";
-            echo "<a href='cafeterias.php/$row2[id]'>";
+            echo "<a class='nchor' href='cafeterias/$row2[id]'>";
             echo "<div class='uni-cards'>";
             echo "<div class='uni-card-img'>";
             echo "<img class='uni-img' src='./images/".$row2['uni_img']."'/>";

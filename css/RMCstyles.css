@@ -426,19 +426,25 @@ td {
     margin-left: 35px;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
 }
 
 .comment-section{
-    border: 2px solid green;
+    box-shadow: 3px 5px 20px 5px rgba(0, 0, 0, 0.7);
+    border-radius: 8px 8px 8px 8px;
+    margin-left: 10px;
     width: 65%;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .comment{
     width: 85%;
-    border: 2px solid blue;
+    border: 2px solid black;
+    border-radius: 0px 8px 8px 0px;
+    background-color: white;
     margin-left: 0px;
     font-size: 20px;
     padding: 5px;
@@ -459,18 +465,27 @@ td {
 }
 
 .icon{
-    border: 2px solid red;
-    width: 15%;
+    width: 20%;
+    height: 150px;
+    border-radius: 8px 8px 8px 8px;
 }
 
 .review{
     border: 2px solid black;
+    background-color: var(--purple);
     display: flex;
     flex-direction: row;
     margin: 15px;
     border-radius: 8px 8px 8px 8px;
 }
 
-#caf-icon{
+.icon-img{
     height: 100%;
+    width: 100%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.nchor{
+    text-decoration: none;
+    color: black;
 }

@@ -1,5 +1,5 @@
 <div id="footer">
-    <img class="footer-el" id="logo" src="../images/favicon.ico"/>
+    <img class="footer-el" id="logo" src="./images/favicon.ico"/>
     <h1 class="footer-el">RateMyCaf</h1>
     <div class="footer-el" id="socials">
         <a>GitHub</a>

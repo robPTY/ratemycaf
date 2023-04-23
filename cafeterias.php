@@ -66,7 +66,8 @@
                 while($row2 = $result2->fetch_assoc())
                 {
                     echo "<div class='review'>";
-                    echo "<div class ='icon'>";
+                    echo "<div class='icon'>";
+                    echo "<img class='icon-img' src='../images/".$row2['icon']."'>";
                     echo "</div>";
                     echo "<div class='comment'>";
                     echo "<span class='cafeteria-title'>".$row2['cafeteria']."</span><br>";
