@@ -56,28 +56,27 @@
     ?>
     <div class='main-holder'>
         <div class='comment-section'>
-            <div class='review'>
-                <div class='icon'>
-                    <!----<img id='caf-icon' src='../images/caf-people.jpg'> ---->
-                </div>
-                <div class='comment'>
-                    <?php
-                        $sql2="SELECT * FROM cafeterias_tab WHERE id = ?";
-                        $stmt2 = $conn->prepare($sql2);
-                        $stmt2->bind_param("i", $id);
-                        $id = $_GET['id'];
-                        $stmt2->execute();
-                        $result2 = $stmt2->get_result();
-                        while($row2 = $result2->fetch_assoc())
-                        {
-                            echo "<span class='cafeteria-title'>".$row2['cafeteria']."</span><br>";
-                            echo $row2['description']."<br>";
-                            echo "<span class='meal-title'>Student Rating: </span>";
-                            echo $row2['rating'];
-                        }
-                    ?>
-                </div>
-            </div>
+            <?php
+                $sql2="SELECT * FROM cafeterias_tab WHERE id = ?";
+                $stmt2 = $conn->prepare($sql2);
+                $stmt2->bind_param("i", $id);
+                $id = $_GET['id'];
+                $stmt2->execute();
+                $result2 = $stmt2->get_result();
+                while($row2 = $result2->fetch_assoc())
+                {
+                    echo "<div class='review'>";
+                    echo "<div class ='icon'>";
+                    echo "</div>";
+                    echo "<div class='comment'>";
+                    echo "<span class='cafeteria-title'>".$row2['cafeteria']."</span><br>";
+                    echo $row2['description']."<br>";
+                    echo "<span class='meal-title'>Student Rating: </span>";
+                    echo $row2['rating'];
+                    echo "</div>";
+                    echo "</div>";
+                }
+            ?>
         </div>
         <div class='menu-section'>
             <h1>Today's Menu</h1>
