@@ -181,6 +181,25 @@ strong.button:hover{
 
 /*REVIEWS SECTION*/
 
+.school-list-text{
+    margin-left:25px;
+    text-decoration:none;
+    color: #8C52FF;
+}
+
+#school-list-img{
+    width: 100%;
+    height: 100%;
+}
+
+#school-list-section{
+    display: flex;
+}
+
+#school-img-section{
+    width: 50%;
+}
+
 .boldt{
     font-weight: bold;
     font-size: 24px;
@@ -192,7 +211,7 @@ strong.button:hover{
 }
 #review-section{
     height: 100vh;
-    
+    margin-bottom: -100px;
 }
 
 #review-section p{
@@ -575,20 +594,22 @@ div.stars {
 }
 
 .events-but{
+    font-family: 'Raleway',sans-serif;
+    margin-right: 10px;
+    border: 1px solid var(--purple);
+    color: var(--white);
     background-color: var(--purple);
-    color: white;
-    border: 2px solid white;
-    border-radius: 8px 8px 8px 8px;
-    font-size: 16px;
-    width: 150px;
-    text-align: center;
-    justify-content: center;;
-    padding: -30px;
+    padding: 4px;
+    border-radius: 4px; 
+    font-size: 24px;
+    cursor: pointer;
     text-decoration: none;
+    margin-left: 1125px;
 }
 
 .events-but:hover{
     font: white;
+    border: 1px solid var(--purple);
 }
 
 #privacy-section{

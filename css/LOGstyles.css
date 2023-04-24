@@ -4,6 +4,7 @@ body {
 
 #login-section{
     margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 form {
@@ -114,4 +115,9 @@ form a {
 #footer{
     width: 100%;
     padding: 10px;
+}
+
+#reg-section{
+    margin-top: 90px;
+    margin-bottom: 90px;
 }

@@ -14,7 +14,7 @@
     if(strcasecmp($_SESSION['captcha'], $_POST['captcha']) != 0)
     {
       $_SESSION['message'] = "<span style='color:red;'>Entered captcha code is incorrect.</span>";
-      header('Location: ./login.php');
+      header('Location: ./login.php?');
     }
     else{
       $at_pos = strpos($email, '@'); 
@@ -31,6 +31,6 @@
   else
     {
       $_SESSION['message'] = "<span style='color:red;'>Username or password is incorrect</span>";
-      header('Location: ./login.php');
+      header('Location: ./login.php?');
     }
  ?>

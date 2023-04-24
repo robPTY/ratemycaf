@@ -11,9 +11,9 @@
     include("./reusables/db_connection.php");
 ?>
 <body>
-    <div id="about-section">
-        <div id="about-img-section">
-            <img id="about-img" src="./images/uniart.jpg">
+    <div id="school-list-section">
+        <div id="school-img-section">
+            <img id="school-list-img" src="./images/uniart.jpg">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Lists of Schools in</span></h4>
@@ -25,7 +25,7 @@
                 echo "<div id='unis-list-holder'>";
                 while($row2 = $result2->fetch_assoc())
                 {
-                    echo $row2['uni_name']."<br>";
+                    echo "<a class='school-list-text' href='/ratemycaf/cafeterias/$row2[id]'>".$row2['uni_name']."</a><br>";
                 }
                 echo "</div>";
             ?>
