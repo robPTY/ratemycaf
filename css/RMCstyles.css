@@ -591,3 +591,9 @@ div.stars {
     width: 150px;
     padding: -30px;
 }
+
+#privacy-section{
+    display: flex;
+    height: 175vh;
+    font-family:Arial, Helvetica, sans-serif;
+}

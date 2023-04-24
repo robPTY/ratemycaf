@@ -30,7 +30,7 @@
             We encourage you guys to share this project with all your friends whether they may be from
             the same college or not. We also want to indicate that since this is not a real project, we 
             do not make revenue or claim any of the information as our own. All we are doing is making the 
-            platform for people to view reviewed cafeterias. Again, <strong>We do not claim any of this information 
+            platform for people to view reviewed cafeterias. Again, <strong>we do not claim any of this information 
             as our own</strong>
             </p>
             <p class="inside-text-abt">
