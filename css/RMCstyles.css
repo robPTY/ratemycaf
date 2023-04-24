@@ -385,7 +385,7 @@ td {
     text-align: center;
     color: white;
     display: flex;
-    margin-left: 350px;
+    margin-left: 420px;
     left: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -399,7 +399,7 @@ td {
 }
 
 .container-for-ban::before{
-    margin-top: 182px;
+    margin-top: 10px;
     content: '';
     width: 100%;
     height: 20%;
@@ -407,13 +407,6 @@ td {
     background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
-#left-sided{
-    text-align: left;
-}
-
-#right-sided{
-    text-align: right;
-}
 
 .main-holder{
     display: flex;
@@ -592,6 +585,11 @@ div.stars {
     text-align: center;
     justify-content: center;;
     padding: -30px;
+    text-decoration: none;
+}
+
+.events-but:hover{
+    font: white;
 }
 
 #privacy-section{
@@ -599,3 +597,4 @@ div.stars {
     height: 175vh;
     font-family:Arial, Helvetica, sans-serif;
 }
+

@@ -29,8 +29,26 @@
 </head>
 <body>
     <?php
+        $sql2="SELECT * FROM universities_tab WHERE id = ?";
+        $stmt2 = $conn->prepare($sql2);
+        $stmt2->bind_param("i", $id);
+        $id = $_GET['id'];
+        $stmt2->execute();
+        $result2 = $stmt2->get_result();
+        $row2 = $result2->fetch_assoc();
+        echo "<div class='container-for-ban'>";
+        echo "<img class='uni-banner-img' src='../images/".$row2['uni_banner_img']."'/>";
+        echo "<div class='text-container'>";
+        echo "<h1 id='left-sided'>".$row2['uni_name']." -</h1>";
+        echo "<h1 id='right-sided'>"."&nbsp;".$row2['uni_location']."</h1>";
+        echo "<a class='events-but' href='../events/".$row2['id']."'<button>Events</button></a>";
+        echo "</div>";
+        echo "</div>";
+        echo "<title> RateMyCaf | $row2[uni_name] </title>";
+    ?>
+    <?php
         include("./reusables/footer.php");
-?>
+    ?>
 </body>
 </html>
 
