@@ -3,6 +3,8 @@
 <?php include("./reusables/id_connection.php")?>
 <!DOCTYPE html>
 <?php
+    $id = $_GET['id'];
+    $_SESSION['id'] = $id;
     include("./reusables/top-menu.php");
 ?>
 <html>
@@ -16,8 +18,6 @@
             $sql2="SELECT * FROM universities_tab WHERE id = ?";
             $stmt2 = $conn->prepare($sql2);
             $stmt2->bind_param("i", $id);
-            $id = $_GET['id'];
-            $_SESSION['id'] = $id;
             $stmt2->execute();
             $result2 = $stmt2->get_result();
             $row2 = $result2->fetch_assoc();
@@ -32,7 +32,7 @@
         $sql2="SELECT * FROM universities_tab WHERE id = ?";
         $stmt2 = $conn->prepare($sql2);
         $stmt2->bind_param("i", $id);
-        $id = $_GET['id'];
+
         $stmt2->execute();
         $result2 = $stmt2->get_result();
         $row2 = $result2->fetch_assoc();
@@ -41,7 +41,6 @@
         echo "<div class='text-container'>";
         echo "<h1 id='left-sided'>".$row2['uni_name']." -</h1>";
         echo "<h1 id='right-sided'>"."&nbsp;".$row2['uni_location']."</h1>";
-        echo "<a class='events-but' href='../events/".$row2['id']."'<button>Events</button></a>";
         echo "</div>";
         echo "</div>";
         echo "<title> RateMyCaf | $row2[uni_name] </title>";
@@ -78,7 +77,7 @@
                 $sql2="SELECT * FROM cafreviews_tab WHERE id = ?";
                 $stmt2 = $conn->prepare($sql2);
                 $stmt2->bind_param("i", $id);
-                $id = $_GET['id'];
+        
                 $stmt2->execute();
                 $result2 = $stmt2->get_result();
                 while($row1 = $result2->fetch_assoc())
@@ -117,7 +116,7 @@
                 $sql2="SELECT * FROM menu_tab WHERE id = ?";
                 $stmt2 = $conn->prepare($sql2);
                 $stmt2->bind_param("i", $id);
-                $id = $_GET['id'];
+        
                 $stmt2->execute();
                 $result2 = $stmt2->get_result();
                 while($row2 = $result2->fetch_assoc())

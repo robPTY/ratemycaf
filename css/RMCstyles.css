@@ -47,7 +47,6 @@
     color: var(--white);
     background-color: var(--purple);
     padding: 4px;
-    transition: all .5s ease;
     border-radius: 4px; 
     font-size: 24px;
     cursor: pointer;
@@ -374,7 +373,7 @@ td {
 
 .uni-banner-img{
     height: 100%;
-    width: 100.85%;
+    width: 102%;
 }
 
 .text-container {
@@ -392,7 +391,7 @@ td {
 
 
 .container-for-ban{
-    height: 200px;
+    height: 250px;
     width: 98vw;
     margin-left: -10px;
     margin-right: -30px;
@@ -402,7 +401,7 @@ td {
     margin-top: 10px;
     content: '';
     width: 100%;
-    height: 20%;
+    height: 250px;
     position: absolute;
     background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
@@ -597,4 +596,3 @@ div.stars {
     height: 175vh;
     font-family:Arial, Helvetica, sans-serif;
 }
-
