@@ -41,6 +41,7 @@
         echo "<div class='text-container'>";
         echo "<h1 id='left-sided'>".$row2['uni_name']." -</h1>";
         echo "<h1 id='right-sided'>"."&nbsp;".$row2['uni_location']."</h1>";
+        echo "<a class='events-but' href='../events/".$row2['id']."'<button>Events</button></a>";
         echo "</div>";
         echo "</div>";
         echo "<title> RateMyCaf | $row2[uni_name] </title>";
