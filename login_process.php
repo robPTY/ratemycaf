@@ -17,9 +17,12 @@
       header('Location: ./login.php');
     }
     else{
+      $at_pos = strpos($email, '@'); 
+      $edu_pos = strpos($email, '.edu'); 
+      $emailsubstring = substr($email, $at_pos, $edu_pos); 
       $_SESSION['logged_in'] = true;
       $_SESSION['name'] = $row['name'];
-      $_SESSION['email'] = $row['email'];
+      $_SESSION['email'] = $emailsubstring;
       $_SESSION['password'] = $row['password'];
       $_SESSION['university'] = $row['university'];
       header('Location: ./index.php');

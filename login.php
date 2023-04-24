@@ -1,13 +1,19 @@
-<?php session_start() ?>
+<?php session_start();
+if ($_SESSION['logged_in'] == true){
+    header('Location: /ratemycaf/');
+}
+else{
+?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <link href="./css/LOGstyles.css" rel="stylesheet"/>
         <link rel="stylesheet" href="./css/RMCstyles.css">
+        <link rel="stylesheet" href="./css/LOGstyles.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
         <nav id="navbar">
-            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner">RateMy<strong>Caf</strong></p></a>
+            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner"><span class='main-title'>RateMy<strong class='bold-part'>Caf</strong><span></p></a>
         </nav>
     </head>
     <script src="js/RMCcode.js"></script>
@@ -19,9 +25,9 @@
                 <h1 class='login-title'> Log In </h1>
                 <input class="name" id="email" name="email" type="email" placeholder="E-Mail"/>
                 <input class="name" id="password" name="password" type="Password" placeholder="Password"/>
-                <label><strong>Enter Captcha:</strong></label><br />
+                <p><strong>Enter Captcha:</strong></p><br />
                 <input type="text" name="captcha" />
-                <p><br />
+                <p><br/>
                 <img src="captcha.php?rand=<?php echo rand(); ?>" id='captcha_image'>
                 </p>
                 <p>Can't read the image?
@@ -41,3 +47,4 @@
         <?php include("./reusables/footer.php"); ?>
     </body>
 </html>
+<?php } ?>
