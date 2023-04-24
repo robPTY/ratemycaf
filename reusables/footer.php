@@ -13,8 +13,8 @@
         <a href="/ratemycaf/school-list.php">List of Schools</a>
     </div>
     <div class="services, footer-el">
-        <a class='footer-el-p' href='./terms_conditions.php'>Terms and Conditions</a>
-        <a class='footer-el-p'>Privacy and Policy</a>
+        <a class='footer-el-p' href='/ratemycaf/terms_conditions.php'>Terms and Conditions</a>
+        <a class='footer-el-p' href='/ratemycaf/privacy_policy.php'>Privacy and Policy</a>
     </div>
     <div class="footer-el">
         <p class='footer-el-p'>2023 RateMyCaf. All Rights Reserved.</p>
