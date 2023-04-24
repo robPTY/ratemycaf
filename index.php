@@ -110,21 +110,23 @@
     <?php
         include("./reusables/footer.php");
     ?>
-<script type="text/javascript">
-  window.addEventListener('scroll', reveal);
+<?php
+    echo "<script type='text/javascript'>
+      window.addEventListener('scroll', reveal);
 
-  function reveal(){
-    var reveals = document.querySelectorAll('.reveal');
-    for(var i=0; i < reveals.length; i++){
-      var windowheight = window.innerHeight;
-      var revealtop = reveals[i].getBoundingClientRect().top;
-      var revealpoint = 150;
+      function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+        for(var i=0; i < reveals.length; i++){
+          var windowheight = window.innerHeight;
+          var revealtop = reveals[i].getBoundingClientRect().top;
+          var revealpoint = 150;
 
-      if(revealtop < windowheight - revealpoint){
-        reveals[i].classList.add('active');
+          if(revealtop < windowheight - revealpoint){
+            reveals[i].classList.add('active');
+          }
+        }
       }
-    }
-  }
-</script>
+    </script>";
+?>
 </body>
 </html>
