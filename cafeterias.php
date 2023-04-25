@@ -49,6 +49,7 @@
         <div class='comment-section'>
             <div class='addcommentsection'>
             <form method="POST" action="/ratemycaf/commentrating_process.php">
+                <p class='name-of'><strong>Insert Review Here</strong></p>
                 <input type="text" id="cafname" name="cafname" placeholder="Cafeteria Name..." value="">
                     <div class="stars">
                             <input class="star star-5" id="star-5" type="radio" name="star" value="5"/>
@@ -116,7 +117,7 @@
                 $sql2="SELECT * FROM menu_tab WHERE id = ?";
                 $stmt2 = $conn->prepare($sql2);
                 $stmt2->bind_param("i", $id);
-        
+
                 $stmt2->execute();
                 $result2 = $stmt2->get_result();
                 while($row2 = $result2->fetch_assoc())
@@ -133,6 +134,26 @@
                     echo "</div>";
                 }
             ?>
+            <h1>Hours of Operation</h1>
+            <?php
+                $sql2="SELECT * FROM hours_tab WHERE id = ?";
+                $stmt2 = $conn->prepare($sql2);
+                $stmt2->bind_param("i", $id);
+                $stmt2->execute();
+                $result2 = $stmt2->get_result();
+                while($row2 = $result2->fetch_assoc())
+                {
+                    echo "<div class='menu-content'>";
+                    echo "<span class='meal-title'>Open: </span>";
+                    echo $row2['open']."<br>";
+                    echo "<span class='meal-title'>Close: </span>";
+                    echo $row2['close']."<br>";
+                    echo "<span class='meal-title'>Special: </span>";
+                    echo $row2['special']."<br>";
+                    echo "</div>";
+                }
+            ?>
+            <img id='calendar' src='../images/calendar.jpg'>
         </div>
     </div>
     <?php
