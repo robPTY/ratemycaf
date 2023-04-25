@@ -12,7 +12,7 @@
 <body>
     <div id="about-section">
         <div id="about-img-section">
-            <img id="about-img" src="./images/caf-people2.jpg">
+            <img id="about-img" src="./images/terms.jpg">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Terms and Conditions</span></h4>
