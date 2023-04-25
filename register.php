@@ -7,18 +7,15 @@ else{
 <!DOCTYPE html>
 <html>
 	<head>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" 
-		integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/LOGstyles.css"/>
         <link rel="stylesheet" href="./css/RMCstyles.css">
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
         <title>RateMyCaf | Register</title>
-        <nav id="navbar">
-            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner"><span class='main-title'>RateMy<strong class='bold-part'>Caf</strong><span></p></a>
-        </nav>
+        <?php include("./reusables/top-menu.php") ?>
 	</head>
-	<body id='login-bod'>
-		<div id="holder">
+    <title>RateMyCaf | Register</title>
+	<body>
+		<div id="reg-section">
             <form id="logform" method="post" action="register_process.php">
                 <h1 class='register-title'>Register</h1>
                 <input placeholder="E-Mail" type="email" name="email" id="email" required>

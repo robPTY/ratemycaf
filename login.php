@@ -12,9 +12,7 @@ else{
         <link rel="stylesheet" href="./css/RMCstyles.css">
         <link rel="stylesheet" href="./css/LOGstyles.css"/>
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
-        <nav id="navbar">
-            <a id="menu-anchor" href="/ratemycaf/index.php"><p id="title" class="banner"><span class='main-title'>RateMy<strong class='bold-part'>Caf</strong><span></p></a>
-        </nav>
+        <?php include("./reusables/top-menu.php") ?>
     </head>
     <script src="js/RMCcode.js"></script>
     <title>RateMyCaf | Login</title>
