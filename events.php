@@ -71,6 +71,13 @@
             </form>
             <h1 class='adder-header'>Add Here!</h1>
         </div>
+        <?php
+                        if (isset($_SESSION['privelageerror']))
+                        {
+                            echo $_SESSION['privelageerror'];
+                            unset($_SESSION['privelageerror']);
+                        }
+                    ?>
     <div class='events-section'>
     <?php
         $sql2="SELECT * FROM events_tab WHERE id = ?";

@@ -105,7 +105,7 @@
                         echo "No Rating<br>";
                     }
                     echo "<span class='meal-title'>Student Name: </span>";
-                    echo $row1['studname']."(".$row2['uni_short_name'].")<br>";
+                    echo $row1['studname']." (".$row2['uni_short_name'].")<br>";
                     echo "</div>";
                     echo "</div>";
                 }

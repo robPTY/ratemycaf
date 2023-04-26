@@ -20,15 +20,17 @@
 
     if (!preg_match('/@.*\.edu$/', $email)) {
         $_SESSION['emailerror'] = "<span style='color:red;'>Please enter a valid .edu email address.</span>";
+        header('Location: /ratemycaf/register.php');
     } 
     else if(empty($matches)) { 
         $_SESSION['unierror'] = "<span style='color:red;'>Please enter a valid university within our databases.</span>";
+        header('Location: /ratemycaf/register.php');
     }
     else {
         $sql1 = "INSERT INTO Registration_tab (email, name, university, password) VALUES ('$email', '$name', '$university', '$password');";
         if ($conn->query($sql1) === TRUE) {
             $_SESSION['registered'] = true;
-            header('Location: index.php');
+            header('Location: /ratemycaf/index.php');
         } 
     }      
 ?>

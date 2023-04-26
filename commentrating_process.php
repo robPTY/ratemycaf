@@ -11,10 +11,6 @@
   $result = $conn->query($sql);
   $row = $result->fetch_assoc();
 
-  echo $_SESSION['email'];
-  echo "<br>";
-  echo $row['email'];
-
   if($_SESSION['email'] == $row['email'] && $_SESSION['logged_in'] == true){
     $sql1 = "INSERT INTO cafreviews_tab (id, cafeteria, rating, description, studname, icon) VALUES ('$_SESSION[id]', '$cafname', '$rating', '$comment', '$_SESSION[name]', 'icon.jpg');";
     if ($conn->query($sql1) === TRUE) {
