@@ -1,4 +1,6 @@
+
 <?php session_start(); ?>
+<?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 <?php include("./reusables/db_connection.php")?>
 <?php include("./reusables/id_connection.php")?>
 <!DOCTYPE html>
@@ -6,6 +8,20 @@
     $id = $_GET['id'];
     $_SESSION['id'] = $id;
     include("./reusables/top-menu.php");
+
+    $sql="SELECT * FROM universities_tab";
+    $result = $conn->query($sql);
+    while($row = $result->fetch_assoc()){
+        if($id == $row['id']){
+            $idexists = true;
+        }
+    }
+
+    if (!$idexists){
+        header("Location: /ratemycaf/notfoundpage.php");
+    }
+    else{
+
 ?>
 <html>
 <head>
@@ -161,4 +177,4 @@
 ?>
 </body>
 </html>
-
+<?php } ?>

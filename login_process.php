@@ -10,7 +10,7 @@
   $result=$conn->query($sql);
   $row = $result->fetch_assoc(); 
 
-  if(($conn->query($sql) == TRUE) && (isset($_POST['captcha']) && ($_POST['captcha']!=""))){
+  if(($row['email'] == $email && $row['password'] == $pwd) && (isset($_POST['captcha']) && ($_POST['captcha']!=""))){
     if(strcasecmp($_SESSION['captcha'], $_POST['captcha']) != 0)
     {
       $_SESSION['message'] = "<span style='color:red;'>Entered captcha code is incorrect.</span>";
@@ -25,7 +25,7 @@
       $_SESSION['email'] = $emailsubstring;
       $_SESSION['password'] = $row['password'];
       $_SESSION['university'] = $row['university'];
-      header('Location: ./index.php');
+      header('Location: '.$_SESSION['URL']);
     }
   }
   else

@@ -1,5 +1,6 @@
-<?php session_start(); 
-?>
+<?php session_start(); ?>
+<?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,14 +25,7 @@
         include("./reusables/db_connection.php");
     ?>
 </head>
-<!-------TODO---
-1) FIX BUTTON IN SEARCH BAR
-1.5) FIX FONTS OF EVERYTHING
-1.8) REWRITE ALL THE TEXT PARTS
-2) ADD DATA FOR MOST REVIEWED
-3) FIX FOOTER/LOGINPAGE
-4) REPLACE REVIEW SECTION WITH PHP
--------->
+
 <?php if($_SESSION["registered"] === true){
     unset($_SESSION["registered"]);
      ?>
