@@ -24,7 +24,7 @@ else{
                 <input class="name" id="email" name="email" type="email" placeholder="E-Mail"/>
                 <input class="name" id="password" name="password" type="Password" placeholder="Password"/>
                 <p><strong>Enter Captcha:</strong></p><br />
-                <input type="text" name="captcha" />
+                <input type="text" name="captcha"/>
                 <p><br/>
                 <img src="captcha.php?rand=<?php echo rand(); ?>" id='captcha_image'>
                 </p>
