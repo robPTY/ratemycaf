@@ -211,7 +211,7 @@ strong.button:hover{
 }
 #review-section{
     height: 100vh;
-    margin-bottom: -100px;
+    margin-bottom: -80px;
 }
 
 #review-section p{
@@ -276,6 +276,33 @@ strong.button:hover{
 
 .footer-el{
     margin: 10px 0;
+}
+
+.fa.fa-github{
+    font-size:40px;
+    color: var(--purple);
+}
+.fa.fa-instagram{
+    font-size:40px;
+    color: var(--purple);
+
+}
+.fa.fa-twitter{
+    font-size:40px;
+    color: var(--purple);
+
+}
+
+.fa.fa-instagram:hover{
+    color: black;
+}
+
+.fa.fa-github:hover{
+    color: black;
+}
+
+.fa.fa-twitter:hover{
+    color: black;
 }
 
 #logo{
@@ -604,7 +631,7 @@ div.stars {
     font-size: 24px;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 1125px;
+    margin-left: 970px;
 }
 
 .events-but:hover{
@@ -614,7 +641,7 @@ div.stars {
 
 #privacy-section{
     display: flex;
-    height: 175vh;
+    height: 185vh;
     font-family:Arial, Helvetica, sans-serif;
 }
 
@@ -658,12 +685,18 @@ body{
 .event-holder{
     border: 2px solid black;
     border-radius: 8px 8px 8px 8px;
-    width: 10%;
+    width: 40%;
     margin: 10;
     height: 30%;
     flex-basis: 25%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.event-holder:hover{
+    transform: scale(1.03);
 }
 
 .event-form{
@@ -695,4 +728,9 @@ body{
 .adder-header{
     margin-top: -20px;
     margin-bottom: -10px;
+}
+
+
+.footer-title-thing{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

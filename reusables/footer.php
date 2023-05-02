@@ -1,10 +1,12 @@
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 <div id="footer">
     <img class="footer-el" id="logo" src="/ratemycaf/images/favicon.ico"/>
-    <h1 class="footer-el">RateMyCaf</h1>
+    <h1 id='footer-title-thing' class="footer-el">RateMyCaf</h1>
     <div class="footer-el" id="socials">
-        <a class='footer-el-p' href='https://github.com/robPTY/ratemycaf'>GitHub</a>
-        <a class='footer-el-p'>Instagram</a>
-        <a class='footer-el-p'>Twitter</a>
+        <a class='footer-el-p fa fa-github' href='https://github.com/robPTY/ratemycaf'></a>
+        <a class='footer-el-p fa fa-instagram'></a>
+        <a class='footer-el-p fa fa-twitter'></a>
     </div>
     <div class="services, footer-el">
         <a href="/ratemycaf/about.php">About</a>

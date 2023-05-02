@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+<?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 
 <head>
 <link rel="stylesheet" href="css/RMCstyles.css">
