@@ -2,9 +2,8 @@
     //just so Rob can access remotely
     header('Access-Control-Allow-Origin: *');
     include("reusables/db_connection.php");
-    $query = $_GET['term'];
     // Fetch the suggestions from table
-    $sql = "SELECT uni_name FROM universities_tab WHERE uni_name LIKE '%".$query."%'";
+    $sql = "SELECT uni_name FROM universities_tab";
     $result = $conn->query($sql);
 
     $suggestions = array();
