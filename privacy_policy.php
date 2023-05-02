@@ -12,7 +12,7 @@
 <body>
     <div id="privacy-section">
         <div id="about-img-section">
-            <img id="about-img" src="./images/caf-people2.jpg">
+            <img class='img-redux' src="./images/privarcy.png">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Privacy Policy</span></h4>

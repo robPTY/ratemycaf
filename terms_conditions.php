@@ -35,7 +35,8 @@
             as our own</strong>
             </p>
             <p class="inside-text-abt">
-            For more information about our purpose/motivation, please check out the <strong><a href='./about.php'>About</a></strong> page.
+            For more information about our purpose/motivation, please check out the <strong><a href='./about.php'>About</a></strong> page. This project is 
+            inspired by RateMyProfessor and Jed Calug. He gave us permission to use a similar concept. 
             </p>
         </div>
     </div>

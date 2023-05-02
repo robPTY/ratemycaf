@@ -58,10 +58,11 @@
                 <img id="search-img" src="./images/review.jpg">
             </div>
             <div class="side-text">
-                <p>Write an anonymized review</p>
+                <p>Write a secure and personal review</p>
                 <p>Share your experience at your college cafeteria by writing a review. Be honest with your ratings
                     on the food, staff and facility.
-                    Your reviews are completely anonymous and will help raise engagement at these locations.
+                    Your reviews are secured within our database and do not compromise any of your user 
+                    details, so you wont have to worry about any data stealing.
                 </p>
             </div>
         </div>
