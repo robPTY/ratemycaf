@@ -2,7 +2,7 @@ $(function (){
     $("#search-bar").autocomplete({
         source: function(request, response){
             $.ajax({
-                url: 'http://localhost/ratemycaf/autocomplete-process.php',
+                url: 'http://localhost/ratemycaf/processes/autocomplete-process.php',
                 type:'GET',
                 dataType:'json',
                 success:function(data){

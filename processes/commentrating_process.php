@@ -1,7 +1,7 @@
 <?php 
   session_start();
 
-  include ("./reusables/db_connection.php");
+  include ("../reusables/db_connection.php");
 
   $cafname=($_POST['cafname']);
   $comment=($_POST['addcomment']);

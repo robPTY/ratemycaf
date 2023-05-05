@@ -23,6 +23,12 @@ We used a lot of images, and all of them can be found inside this folder
 Mainly files used for the JQuery (autocomplete) part of the project.
 ### Information Module Folder
 Content of this folder is explained in the # Modules section
+### Processes Folder
+Files used for the processes that either add to the database, connect to the database or take 
+data from the databased onto the frontend
+### Authentication Module Folder
+All of the login-register files and their processes. Also includes the logout file and the
+captcha, but more on that in the following # Module section.
 
 # Modules
 ### Module-1: Search Module

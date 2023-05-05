@@ -1,7 +1,6 @@
 <?php 
   session_start();
-
-  include ("./reusables/db_connection.php");
+  include ("../reusables/db_connection.php");
 
   $title=($_POST['title']);
   $date=($_POST['date']);

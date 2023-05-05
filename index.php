@@ -36,7 +36,7 @@
 <body>
     <div id="search-section"> 
         <p>Finding a place to eat just got a lot simpler.</p>
-        <form name="search-bar-form" method="POST" action="cafeteria_process.php">
+        <form name="search-bar-form" method="POST" action="processes/cafeteria_process.php">
             <input name="search-bar" id="search-bar" placeholder="Search for your university" type="text"/>
         </form>
     </div>

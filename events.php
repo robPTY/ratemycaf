@@ -63,7 +63,7 @@
     ?>
     <div class='events-holder'>
         <div class='adder'>
-            <form class='event-form' method="POST" action="/ratemycaf/event_adding.php">
+            <form class='event-form' method="POST" action="/ratemycaf/processes/event_adding.php">
                 <label for="title">Title: </label>
                 <input class='adder2' type="text" name="title" required>
 

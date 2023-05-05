@@ -64,7 +64,7 @@
     <div class='main-holder'>
         <div class='comment-section'>
             <div class='addcommentsection'>
-            <form method="POST" action="/ratemycaf/commentrating_process.php">
+            <form method="POST" action="/ratemycaf/processes/commentrating_process.php">
                 <p class='name-of'><strong>Insert Review Here</strong></p>
                 <input type="text" id="cafname" name="cafname" placeholder="Cafeteria Name..." value="">
                     <div class="stars">
