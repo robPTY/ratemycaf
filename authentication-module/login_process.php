@@ -1,7 +1,7 @@
 <?php 
   session_start();
 
-  include ("./reusables/db_connection.php");
+  include ("../reusables/db_connection.php");
 
   $email=($_POST['email']);
   $pwd=($_POST['password']);

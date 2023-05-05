@@ -7,11 +7,11 @@ else{
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="./css/LOGstyles.css"/>
-        <link rel="stylesheet" href="./css/RMCstyles.css">
+		<link rel="stylesheet" href="../css/LOGstyles.css"/>
+        <link rel="stylesheet" href="../css/RMCstyles.css">
         <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
         <title>RateMyCaf | Register</title>
-        <?php include("./reusables/top-menu.php") ?>
+        <?php include("../reusables/top-menu.php") ?>
 	</head>
     <title>RateMyCaf | Register</title>
 	<body>
@@ -37,7 +37,7 @@ else{
                 ?>
             </form>
         </div>
-        <?php include("./reusables/footer.php"); ?>
+        <?php include("../reusables/footer.php"); ?>
 	</body>
 </html>
 <?php } ?>

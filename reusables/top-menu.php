@@ -14,15 +14,15 @@
     }
 
     if($_SESSION['logged_in']){
-        echo "<form action='/ratemycaf/logout.php'>";
+        echo "<form action='/ratemycaf/authentication-module/logout.php'>";
         echo "<input id='SignedInButton' class ='banner, topButtons' type='submit' value='Welcome, $_SESSION[name]'/>";
     }
     else{
-        if($currentDomain === "/ratemycaf/login.php?" || $currentDomain === "/ratemycaf/register.php"){
+        if($currentDomain === "/ratemycaf/authentication-module/login.php?" || $currentDomain === "/ratemycaf/authentication-module/register.php"){
             //display nothing
         }
         else{
-            echo "<form action='/ratemycaf/login.php'>";
+            echo "<form action='/ratemycaf/authentication-module/login.php'>";
             echo "<input id='LogInButton' class ='banner, topButtons' type='submit' value='Sign In'/>";
         }
 

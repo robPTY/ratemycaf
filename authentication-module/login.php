@@ -8,11 +8,11 @@ else{
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="./css/LOGstyles.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="./css/RMCstyles.css">
-        <link rel="stylesheet" href="./css/LOGstyles.css"/>
-        <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
-        <?php include("./reusables/top-menu.php") ?>
+        <link href="../css/LOGstyles.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="../css/RMCstyles.css">
+        <link rel="stylesheet" href="../css/LOGstyles.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+        <?php include("../reusables/top-menu.php") ?>
     </head>
     <script src="js/RMCcode.js"></script>
     <title>RateMyCaf | Login</title>
@@ -42,7 +42,7 @@ else{
                 <a href="register.php"><p>Don't have an account? Sign Up</p></a>
             </form>
         </div>
-        <?php include("./reusables/footer.php"); ?>
+        <?php include("../reusables/footer.php"); ?>
     </body>
 </html>
 <?php } ?>

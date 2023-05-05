@@ -21,9 +21,8 @@ Some of the imported fonts we used on our logo and other parts of the project ar
 We used a lot of images, and all of them can be found inside this folder
 ### JQuery + JS Folders
 Mainly files used for the JQuery (autocomplete) part of the project.
-### Everything Else
-We were thinking of a better way to organize other files, but there is no one perfect way of grouping
-these files.
+### Information Module Folder
+Content of this folder is explained in the # Modules section
 
 # Modules
 ### Module-1: Search Module
