@@ -10,6 +10,12 @@ implementations consist of adding an events system, allowing users to create a p
 university if not available, and more.
 
 # Modules
+Module-1: Search Module
+- Index.php
+- RMCcode.js (RMC = RateMyCaf)
+- JQuery
+- autocomplete-process.php
+- cafeteria_process.php
 
 # Links
 
