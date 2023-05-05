@@ -29,6 +29,10 @@ data from the databased onto the frontend
 ### Authentication Module Folder
 All of the login-register files and their processes. Also includes the logout file and the
 captcha, but more on that in the following # Module section.
+### Everything Else
+The "core" files which act as templates. Since they utilize the dynamic directory creation
+from the .htaccess file, they must be placed in the root folder. And then, well, there is 
+the readme file, which is this one.
 
 # Modules
 ### Module-1: Search Module
@@ -71,6 +75,8 @@ captcha, but more on that in the following # Module section.
 - top-menu.php
 - id_connection.php
 
-# Links
-
 # About Us
+Roberto Aguero - Computer Science Major & Mathematics Minor - Class of 2025 JBU
+Grayson Crawford - Computer Science Major - Class of 2025 JBU
+More about our motivation for this application including the problem statement can
+be found in the about.php file (inside information-module).
