@@ -2,18 +2,18 @@
 <?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
+<link rel="stylesheet" href="../css/RMCstyles.css">
 <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
 <title>RateMyCaf | About</title>
 
 </head>
 <?php
-    include("./reusables/top-menu.php");
+    include("../reusables/top-menu.php");
 ?>
 <body>
     <div id="about-section">
         <div id="about-img-section">
-            <img id="about-img" src="./images/help.jpg">
+            <img id="about-img" src="../images/help.jpg">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">HELP</span></h4>
@@ -32,6 +32,6 @@ Our rating system is based on a five-star scale, with five stars being the highe
     </div>
 </body>
 <?php
-    include("./reusables/footer.php");
+    include("../reusables/footer.php");
 ?>
 

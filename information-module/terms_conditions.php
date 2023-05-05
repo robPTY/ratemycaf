@@ -2,18 +2,18 @@
 <?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
-<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+<link rel="stylesheet" href="../css/RMCstyles.css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
 <title>RateMyCaf | Terms & Conditions</title>
 
 </head>
 <?php
-    include("./reusables/top-menu.php");
+    include("../reusables/top-menu.php");
 ?>
 <body>
     <div id="about-section">
         <div id="about-img-section">
-            <img id="about-img" src="./images/terms.jpg">
+            <img id="about-img" src="../images/terms.jpg">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Terms and Conditions</span></h4>
@@ -35,13 +35,13 @@
             as our own</strong>
             </p>
             <p class="inside-text-abt">
-            For more information about our purpose/motivation, please check out the <strong><a href='./about.php'>About</a></strong> page. This project is 
+            For more information about our purpose/motivation, please check out the <strong><a href='../about.php'>About</a></strong> page. This project is 
             inspired by RateMyProfessor and Jed Calug. He gave us permission to use a similar concept. 
             </p>
         </div>
     </div>
 </body>
 <?php
-    include("./reusables/footer.php");
+    include("../reusables/footer.php");
 ?>
 

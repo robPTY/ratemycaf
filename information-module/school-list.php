@@ -2,19 +2,19 @@
 <?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
-<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+<link rel="stylesheet" href="../css/RMCstyles.css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
 <title>RateMyCaf | School List</title>
 
 </head>
 <?php
-    include("./reusables/top-menu.php");
-    include("./reusables/db_connection.php");
+    include("../reusables/top-menu.php");
+    include("../reusables/db_connection.php");
 ?>
 <body>
     <div id="school-list-section">
         <div id="school-img-section">
-            <img id="school-list-img" src="./images/uniart.jpg">
+            <img id="school-list-img" src="../images/uniart.jpg">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Lists of Schools in</span></h4>
@@ -34,6 +34,6 @@
     </div>
 </body>
 <?php
-    include("./reusables/footer.php");
+    include("../reusables/footer.php");
 ?>
 

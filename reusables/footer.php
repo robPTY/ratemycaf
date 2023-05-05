@@ -9,14 +9,14 @@
         <a class='footer-el-p fa fa-twitter'></a>
     </div>
     <div class="services, footer-el">
-        <a href="/ratemycaf/about.php">About</a>
-        <a href="/ratemycaf/contact.php">Contact</a>
-        <a href='/ratemycaf/help.php'>Help</a>
-        <a href="/ratemycaf/school-list.php">List of Schools</a>
+        <a href="/ratemycaf/information-module/about.php">About</a>
+        <a href="/ratemycaf/information-module/contact.php">Contact</a>
+        <a href='/ratemycaf/information-module/help.php'>Help</a>
+        <a href="/ratemycaf/information-module/school-list.php">List of Schools</a>
     </div>
     <div class="services, footer-el">
-        <a class='footer-el-p' href='/ratemycaf/terms_conditions.php'>Terms and Conditions</a>
-        <a class='footer-el-p' href='/ratemycaf/privacy_policy.php'>Privacy and Policy</a>
+        <a class='footer-el-p' href='/ratemycaf/information-module/terms_conditions.php'>Terms and Conditions</a>
+        <a class='footer-el-p' href='/ratemycaf/information-module/privacy_policy.php'>Privacy and Policy</a>
     </div>
     <div class="footer-el">
         <p class='footer-el-p'>2023 RateMyCaf. All Rights Reserved.</p>

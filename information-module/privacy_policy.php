@@ -1,18 +1,18 @@
 <?php session_start(); ?>
 
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
-<link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+<link rel="stylesheet" href="../css/RMCstyles.css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
 <title>RateMyCaf | Privacy Policy</title>
 
 </head>
 <?php
-    include("./reusables/top-menu.php");
+    include("../reusables/top-menu.php");
 ?>
 <body>
     <div id="privacy-section">
         <div id="about-img-section">
-            <img class='img-redux' src="./images/privarcy.png">
+            <img class='img-redux' src="../images/privarcy.png">
         </div>
         <div id="about-text">
             <h4 class="inside-text-abt" ><span class="highlights">Privacy Policy</span></h4>
@@ -65,7 +65,7 @@
             However, no method of transmission over the internet or electronic storage is 100% secure. Therefore, 
             we cannot guarantee absolute security.</p>
             <p class="inside-text-abt">
-            For more information about our purpose/motivation, please check out the <strong><a href='./about.php'>About</a></strong> page.
+            For more information about our purpose/motivation, please check out the <strong><a href='../about.php'>About</a></strong> page.
             </p>
             <h4 class="inside-text-abt" ><span class="highlights">Cookies</span></h4>
             <p class="inside-text-abt">
@@ -81,12 +81,12 @@
             If you have any questions or concerns about our privacy policy, please contact us at 
             <span class='highlights'>contact@ratemycaf.com.</span> </p>
             <p class="inside-text-abt">
-            For more information about our purpose/motivation, please check out the <strong><a href='./about.php'>About</a></strong> page.
+            For more information about our purpose/motivation, please check out the <strong><a href='../about.php'>About</a></strong> page.
             </p>
         </div>
     </div>
 </body>
 <?php
-    include("./reusables/footer.php");
+    include("../reusables/footer.php");
 ?>
 

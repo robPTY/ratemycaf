@@ -10,19 +10,20 @@ implementations consist of adding an events system, allowing users to create a p
 university if not available, and more.
 
 # File Organization
-
 ### Reusables Folder
 Inside this folder, all the files of the utilities module can be found. These are files reused all
 throughout the project.
-
 ### CSS Folder
 Inside this folder you can find all our stylesheets used all throughout the project.
-
 ### Fonts Folder
 Some of the imported fonts we used on our logo and other parts of the project are inside this folder
-
 ### Images Folder
 We used a lot of images, and all of them can be found inside this folder
+### JQuery + JS Folders
+Mainly files used for the JQuery (autocomplete) part of the project.
+### Everything Else
+We were thinking of a better way to organize other files, but there is no one perfect way of grouping
+these files.
 
 # Modules
 ### Module-1: Search Module

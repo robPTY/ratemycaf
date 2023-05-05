@@ -2,13 +2,13 @@
 <?php $_SESSION['URL'] = $_SERVER['REQUEST_URI']; ?>
 
 <head>
-<link rel="stylesheet" href="css/RMCstyles.css">
+<link rel="stylesheet" href="../css/RMCstyles.css">
 <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
 <title>RateMyCaf | About</title>
 
 </head>
 <?php
-    include("./reusables/top-menu.php");
+    include("../reusables/top-menu.php");
 ?>
 <body>
     <div id="about-section">
@@ -30,11 +30,11 @@
             </p>
         </div>
         <div id="about-img-section">
-            <img id="about-img" src="./images/contact2.jpg">
+            <img id="about-img" src="../images/contact2.jpg">
         </div>
     </div>
 </body>
 <?php
-    include("./reusables/footer.php");
+    include("../reusables/footer.php");
 ?>
 
