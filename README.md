@@ -78,4 +78,4 @@ the readme file, which is this one.
 # About Us
 - Roberto Aguero - Computer Science Major & Mathematics Minor - Class of 2025 JBU
 - Grayson Crawford - Computer Science Major - Class of 2025 JBU
-- More about our motivation for this application including the problem statement can be found in the about.php file (inside information-module).
+- More about our motivation for this application including the problem statement can git pube found in the about.php file (inside information-module).
